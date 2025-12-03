@@ -29,7 +29,6 @@ const Job = ({ data }) => {
                 _id: data._id,
                 title: data.title,
                 company_name: data.company_name,
-                url: data.url,
               },
             })
           }
