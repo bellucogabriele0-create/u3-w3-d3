@@ -9,12 +9,10 @@ const CompanySearchResults = () => {
 
   const baseEndpoint =
     "https://strive-benchmark.herokuapp.com/api/jobs?company=";
-
   useEffect(() => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     getJobs();
   }, []);
-
   const getJobs = async () => {
     try {
       const response = await fetch(baseEndpoint + params.company);
@@ -26,7 +24,6 @@ const CompanySearchResults = () => {
       console.log(error);
     }
   };
-
   return (
     <Container>
       <Row>
@@ -40,5 +37,4 @@ const CompanySearchResults = () => {
     </Container>
   );
 };
-
 export default CompanySearchResults;

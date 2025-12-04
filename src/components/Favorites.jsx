@@ -39,5 +39,4 @@ const Favourites = () => {
     </Row>
   );
 };
-
 export default Favourites;

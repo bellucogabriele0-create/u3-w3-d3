@@ -3,7 +3,6 @@ const initialState = {
     jobs: [],
   },
 };
-
 const mainReducer = function (state = initialState, action) {
   switch (action.type) {
     case "ADD_TO_FAVOURITES":
@@ -30,5 +29,4 @@ const mainReducer = function (state = initialState, action) {
       return state;
   }
 };
-
 export default mainReducer;
